@@ -1,0 +1,32 @@
+CREATE TABLE AwardCategory (
+    categoryID INT NOT NULL PRIMARY KEY,
+    categoryName VARCHAR(100) NOT NULL,
+    Description VARCHAR(255)
+);
+
+CREATE TABLE Film (
+    FilmID INT NOT NULL PRIMARY KEY,
+    Director VARCHAR(100) NOT NULL,
+    filmName VARCHAR(100) NOT NULL,
+    Year INT NOT NULL,
+    FestivalName VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Award (
+    AwardID INT NOT NULL PRIMARY KEY,
+    filmName VARCHAR(100),
+    Year INT NOT NULL,
+    Winner VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Person (
+    personID INT NOT NULL PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Job VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Festival (
+    festival_ID INT NOT NULL PRIMARY KEY,
+    location VARCHAR(100) NOT NULL,
+    festivalName VARCHAR(100) NOT NULL
+);
